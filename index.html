@@ -43,6 +43,26 @@
             border-radius: 5px;
             border: 1px solid #ccc;
         }
+        
+        .form-container .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container .form-group button:hover {
+            background-color: aquamarine; 
+        }
+        
+        .form-container .form-group form-check-label {
+            width: 100%;
+            padding: 10px;
+        }
+
     </style>
 
 </head>
@@ -55,6 +75,19 @@
                     <label for="fullName">Nome Completo</label>
                     <input type="text" class="form-control" id="fullName">
                 </div>
+                <div class="form-group">
+                    <label for="fullName">Email</label>
+                    <input type="text" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Whatsapp</label>
+                    <input type="text" class="form-control" id="phone">  
+                </div>
+                <div class="form-group">
+                    <label for="termsCheckbox">Aceito os termos de uso</label>
+                    <input type="checkbox" class="form-check-label" id="termsCheckbox">  
+                </div>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
             </form>
         </div>
     </div> 
