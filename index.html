@@ -58,9 +58,8 @@
             background-color: aquamarine; 
         }
         
-        .form-container .form-group form-check-label {
-            width: 100%;
-            padding: 10px;
+        .form-container .form-checkbox {
+            width: auto !important;
         }
 
     </style>
@@ -72,20 +71,24 @@
             <h1> faça seu cadastro agora!</h1>
             <form>
                 <div class="form-group">
-                    <label for="fullName">Nome Completo</label>
+                    <label for="fullName">Nome Completo:</label>
                     <input type="text" class="form-control" id="fullName">
                 </div>
                 <div class="form-group">
-                    <label for="fullName">Email</label>
+                    <label for="fullName">Email:</label>
                     <input type="text" class="form-control" id="email">
                 </div>
                 <div class="form-group">
-                    <label for="phone">Whatsapp</label>
+                    <label for="phone">Whatsapp:</label>
                     <input type="text" class="form-control" id="phone">  
                 </div>
                 <div class="form-group">
+                    <label for="date">Data de nascimento:</label>
+                    <input type="date" class="form-control" id="date">  
+                </div>
+                <div class="form-group">
                     <label for="termsCheckbox">Aceito os termos de uso</label>
-                    <input type="checkbox" class="form-check-label" id="termsCheckbox">  
+                    <input type="checkbox" class="form-checkbox" id="termsCheckbox">  
                 </div>
                 <button type="submit" class="btn btn-primary">Cadastrar</button>
             </form>
